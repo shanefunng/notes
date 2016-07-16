@@ -7,7 +7,8 @@
 ---
 ##代码片段：
 
-  public class Person{
+
+  public class Person {
     private String name;
     private String sex;
     private int age;
@@ -21,6 +22,7 @@
       this.age = age
     }
   }
+  
   
   ##结论：
   
