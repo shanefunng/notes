@@ -6,8 +6,6 @@
 
 ---
 ##代码片段：
-
-
   public class Person {
     private String name;
     private String sex;
@@ -22,7 +20,6 @@
       this.age = age
     }
   }
-  
   
   ##结论：
   
