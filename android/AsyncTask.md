@@ -2,12 +2,14 @@
 ---
 ####1. 继承*Thread*类，重写*run()*方法：
 
-		class MyThread extends Thread() {
-			@Override
-				ublic void run(){
-				/处理逻辑
-			}
-		}
+```class MyThread extends Thread() {
+	@Override
+		ublic void run(){
+		/处理逻辑
+	}
+}
+```
+		
 **启动方式：**
 
 	new MyThread().start();
@@ -15,12 +17,14 @@
 **缺点：**使用继承，耦合性太高。
 #### 2.实现*Runnable*接口：
 
-	class MyThread implements Runnable{
+	```class MyThread implements Runnable{
 		@Override
 		public void run(){
 			//处理逻辑
 		}
 	}
+	```
+	
 **启动方式：**
 
 	MyThread myThread = new MyThread();
