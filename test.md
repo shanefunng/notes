@@ -6,22 +6,22 @@
 
 ---
 ##代码片段：
-
-  public class Person {
-    private String name;
-    private String sex;
-    private int age;
-    private int zipCode;
+	
+	public class Person  {
+   		private String name;
+   		private String sex;
+		private int age;
+    		private int zipCode;
     
-    public void setName(String name){
-      this.name = name;
-    }
+    		public void setName(String name){
+      			this.name = name;
+   		 }
     
-    public void setAge(int age){
-      this.age = age
-    }
-  }
+   	 	public void setAge(int age){
+     			 this.age = age
+   		 }
+ 	 }
   
-  ##结论：
+  ##结论：这是一个测试文件
   
   
