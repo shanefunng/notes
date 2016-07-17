@@ -7,8 +7,8 @@
 		ublic void run(){
 		/处理逻辑
 	}
-}
-```
+}```
+
 		
 **启动方式：**
 
@@ -17,27 +17,27 @@
 **缺点：**使用继承，耦合性太高。
 #### 2.实现*Runnable*接口：
 
-	```class MyThread implements Runnable{
-		@Override
-		public void run(){
-			//处理逻辑
-		}
+```class MyThread implements Runnable{
+	@Override
+	public void run(){
+		//处理逻辑
 	}
-	```
+}```
+	
 	
 **启动方式：**
 
-	MyThread myThread = new MyThread();
-	new Thread(myThread).start();
+```MyThread myThread = new MyThread();
+new Thread(myThread).start();```
 
 #### 3.匿名内部类的方式实现*Runnable*接口,比较==常用==：
 
-	new Thread(new Runnable(){
-		@Override
-		public void run(){
-			//处理逻辑
-		}
-	}).start();
+```new Thread(new Runnable(){
+	@Override
+	public void run(){
+		//处理逻辑
+	}
+}).start();```
 
 ###二、异步消息处理机制：
 1.***Message:***
@@ -56,44 +56,42 @@
 	因为Handler是在主线程中创建的，所以*handleMessage()*方法中的代码逻辑在主线程中执行，一般用来修改UI。
 
 ###三、AsyncTask：
+
 ####1.**代码示例：**
 
-	public class MyAsyncTask extends AsyncTask<Void, Integer, Boolean>
+```public class MyAsyncTask extends AsyncTask<Void, Integer, Boolean>
 	{
     		@Override
     		protected void onPreExecute()
     		{
         		super.onPreExecute();
     		}
-
     		@Override
     		protected void onPostExecute(Boolean aBoolean)
     		{
-        		super.onPostExecute(aBoolean);
+			super.onPostExecute(aBoolean);
     		}
-
     		@Override
     		protected void onProgressUpdate(Integer... values)
     		{
         		super.onProgressUpdate(values);
     		}
-
     		@Override
    		    protected Boolean doInBackground(Void... params)
     		{
         		return null;
     		}
-	}
+	}```
 
-	执行任务:
+执行任务:
 
-	new MyAsyncTask().execute();
+```new MyAsyncTask().execute();```
 
 ####2.泛型参数说明：
 
 1. Params：执行AsyncTask是传入的参数，可用于在后台任务中使用。
 2. Progress：后台任务执行时，如果需要在界面上显示当前的进度，则使用这里指定的泛型作为进度单位。
-3.  Result：任务执行完毕，如果需要对结果进行返回，则使用这里的泛型作为返回值。
+3. Result：任务执行完毕，如果需要对结果进行返回，则使用这里的泛型作为返回值。
 
 ####3.AsyncTask的几个回调方法说明：
 1. *onPreExecute()*
