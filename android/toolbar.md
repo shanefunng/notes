@@ -1,5 +1,5 @@
 ##Toolbar
-### 1. 修改*styles.xml*, 使*AppTheme* 继承自*Theme.AppCompat.....==NoActionBar==*
+### 1. 修改*styles.xml*, 使*AppTheme* 继承自*Theme.AppCompat.....NoActionBar*
 
 		<resources>
 			<style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
@@ -23,7 +23,7 @@
 		......
 		</LinearLayout>
 
-***==注意：==***上述xml属性中，*layout_height*,*background*,*elevation*必须添加;==theme==, ==popupTheme用法未知==, 自定义toolbar高度如下：
+***注意：***上述xml属性中，*layout_height*,*background*,*elevation*必须添加;theme, popupTheme用法未知, 自定义toolbar高度如下：
 	
 	layout_height="Your customized height"
 	minHeight="?attr/actionBarSize"
