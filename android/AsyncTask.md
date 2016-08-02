@@ -1,6 +1,6 @@
-###一、Java中多线程的几种实现方式：
+### 一、Java中多线程的几种实现方式：
 ---
-####1. 继承*Thread*类，重写*run()*方法：
+#### 1. 继承*Thread*类，重写*run()*方法：
 
 	class MyThread extends Thread() {
 		@Override
@@ -40,7 +40,7 @@
 		}
 	}).start();
 
-###二、异步消息处理机制：
+### 二、异步消息处理机制：
 
 1.**Message:**
 	线程之间传递消息，内部可携带少量的信息，常用的字段有*what*,*arg1*,*arg2*,*obj*;其中what,arg1,arg2一般携带整型数据，obj字段携带一个Object对象。
@@ -57,9 +57,9 @@
 **重点：**
 	因为Handler是在主线程中创建的，所以*handleMessage()*方法中的代码逻辑在主线程中执行，一般用来修改UI。
 
-###三、AsyncTask：
+### 三、AsyncTask：
 
-####1.**代码示例：**
+#### 1.**代码示例：**
 
 	public class MyAsyncTask extends AsyncTask<Void, Integer, Boolean>
 		{
@@ -89,13 +89,13 @@
 
 	new MyAsyncTask().execute();
 
-####2.泛型参数说明：
+#### 2.泛型参数说明：
 
 1. Params：执行AsyncTask是传入的参数，可用于在后台任务中使用。
 2. Progress：后台任务执行时，如果需要在界面上显示当前的进度，则使用这里指定的泛型作为进度单位。
 3. Result：任务执行完毕，如果需要对结果进行返回，则使用这里的泛型作为返回值。
 
-####3.AsyncTask的几个回调方法说明：
+#### 3.AsyncTask的几个回调方法说明：
 1. *__onPreExecute()__*
 在*doInBackground(Params)*之前调用，用于进行一些界面上的初始化，例如显示一个进度条对话框等。
 2. *__doInBackground(Params...)__*
