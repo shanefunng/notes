@@ -95,14 +95,14 @@ Content in the first column | Content in the second column
 
 ## SHA引用:自动转为链接
 
-16c999e8c71134401a78d4d46435517b2271d6ac
-mojombo@16c999e8c71134401a78d4d46435517b2271d6ac
+16c999e8c71134401a78d4d46435517b2271d6ac  
+mojombo@16c999e8c71134401a78d4d46435517b2271d6ac  
 mojombo/github-flavored-markdown@16c999e8c71134401a78d4d46435517b2271d6ac
 
 ## Issue引用：自动转为链接
 
-#1
-mojombo#1
+#1  
+mojombo#1  
 mojombo/github-flavored-markdown#1
 
 ## 引用用户：输入 @usename
@@ -123,5 +123,5 @@ mojombo/github-flavored-markdown#1
 
 * __生成段落：__段落前面加空行
 * __无视markdown语法：__加上反斜杠 `\`  
- Let's rename \*our-new -project\* to \*our-old-project*\
+ Let's rename \*our-new -project\* to \*our-old-project\*
 
