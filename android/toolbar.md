@@ -1,4 +1,5 @@
-##Toolbar
+## Toolbar
+---
 ### 1. 修改*styles.xml*, 使*AppTheme* 继承自*Theme.AppCompat.....NoActionBar*
 
 		<resources>
@@ -39,7 +40,7 @@
 			app:showAsAction=""/>
 	</menu>
 
-###4. 修改*MainActivity.class*
+### 4. 修改*MainActivity.class*
 	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {

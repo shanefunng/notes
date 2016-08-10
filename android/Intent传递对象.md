@@ -1,6 +1,6 @@
-##使用Intent传递对象
+## 使用Intent传递对象
 ---
-###Serializable方式
+### Serializable方式
 
 **使用方式：**让需要传递的对象的类实现Serializable接口。
 
@@ -40,7 +40,7 @@
 
 		Person person = (Person) getIntent().getSerializableExtra("person_data");
 
-###Parcelable方式
+### Parcelable方式
 
 **代码示例：**
 
@@ -86,14 +86,14 @@
 
 		Person person = (Person) getIntent().getParcelableExtra("person_data");
 
-###两种方式的对比：
+### 两种方式的对比：
 
-方式|原理|优缺点
---|--|--
-Serializable|将整个对象序列化|实现方式比较简单
-Parcelable|将整个对象分解为内建的基本类型|效率高
+方式 | 原理 | 优缺点
+--- | --- | ---
+Serializable | 将整个对象序列化 | 实现方式比较简单
+Parcelable | 将整个对象分解为内建的基本类型 | 效率高
 
-**推荐使用==Parcelable==方式**
+**推荐使用Parcelable方式**
 
 
 		

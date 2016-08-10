@@ -1,6 +1,6 @@
-##全局获取Context的技巧
+## 全局获取Context的技巧
 ---
-###继承系统Application类：
+### 继承系统Application类：
 
 	/**
  	* Created by shane on 7/10/16.
@@ -22,7 +22,7 @@
     		}
 	}
 
-###修改manifest：
+### 修改manifest：
 	<application 
 		name = ".MyApplication"
 		......
