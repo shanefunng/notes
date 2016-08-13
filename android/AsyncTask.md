@@ -46,7 +46,7 @@
 	线程之间传递消息，内部可携带少量的信息，常用的字段有*what*,*arg1*,*arg2*,*obj*;其中what,arg1,arg2一般携带整型数据，obj字段携带一个Object对象。
 
 2.**Handler:**
-	不要用于发送和处理消息，常用方法有*sendMessage()*,*handleMessage()*.
+	主要用于发送和处理消息，常用方法有*sendMessage()*,*handleMessage()*.
 
 3.**MessageQueue:**
 	消息队列，不要用于存放所有通过handler发送的消息，这部分消息会一直存在于消息队列中，等待被处理。每个线程中只会有一个MessageQueue对象。
