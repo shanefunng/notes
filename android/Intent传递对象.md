@@ -2,7 +2,7 @@
 ---
 ### Serializable方式
 
-**使用方式：**让需要传递的对象的类实现Serializable接口。
+**使用方式:** 让需要传递的对象的类实现Serializable接口。
 
 1. 实现Servializable接口：
 
